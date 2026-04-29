@@ -88,7 +88,9 @@ export default function HomePage() {
       </div>
 
       <section className="px-8 py-12 bg-gray-50">
-        <h3 className="text-2xl font-semibold mb-6">Featured Jobs</h3>
+        <h3 className="text-2xl font-semibold mb-6">
+          Featured Jobs
+        </h3>
 
         <div className="grid md:grid-cols-3 gap-6">
           {[1, 2, 3].map((job) => (
@@ -97,12 +99,22 @@ export default function HomePage() {
               className="bg-white p-6 rounded-2xl shadow"
             >
               <h4 className="font-semibold">Frontend Developer</h4>
+
               <p className="text-gray-500 text-sm">
                 Remote • Full-time
               </p>
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="px-8 py-16 text-center">
+        <h3 className="text-3xl font-bold mb-4">
+          Ready to Start Your Career Journey?
+        </h3>
+        <button className="bg-black text-white px-8 py-3 rounded-xl">
+          Get Started
+        </button>
       </section>
     </>
   );
