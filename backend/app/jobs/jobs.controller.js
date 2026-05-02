@@ -1,9 +1,9 @@
 export const createJob = (req, res) => {
-  const { title, company } = req.body;
+  const { title, company, description } = req.body;
 
   res.status(201).json({
     message: "Job created",
-    job: { title, company }
+    job: { title, company, description }
   });
 };
 
