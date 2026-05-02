@@ -1,6 +1,13 @@
 "use client";
 
-import { Home, Briefcase, Bookmark, Settings } from "lucide-react";
+import {
+  Home,
+  Briefcase,
+  Bookmark,
+  Settings,
+  Bell,
+  UserCircle,
+} from "lucide-react";
 
 export default function Dashboard() {
   return (
@@ -32,7 +39,24 @@ export default function Dashboard() {
       </aside>
 
       <main className="flex-1 p-8">
-        <h1 className="text-3xl font-bold">Dashboard</h1>
+        <div className="flex justify-between items-center mb-10">
+          <div>
+            <h1 className="text-3xl font-bold">Welcome Back</h1>
+            <p className="text-gray-500">
+              Track jobs and applications
+            </p>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <Bell className="cursor-pointer" />
+            <UserCircle
+              size={32}
+              className="cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold">Dashboard</h2>
       </main>
     </div>
   );
